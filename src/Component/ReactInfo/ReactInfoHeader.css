@@ -1,0 +1,25 @@
+.header{
+    height:100vh;
+    background:rgb(40,44,52);
+    background-image:url("https://cdn-icons-png.flaticon.com/512/3393/3393920.png");
+    background-repeat: no-repeat;
+    background-position: center 95%;
+    background-size: 40%;
+    color:white;
+}
+.header > h1 {
+    font-size: 6rem;
+    margin-left:8rem;
+}
+
+
+
+.header > ul li {
+    font-size: 2.5rem;
+    width:fit-content;
+    margin-left:12rem;
+}
+.header > ul li::marker {
+color:rgb(97,218,251);
+font-size:3rem;
+}

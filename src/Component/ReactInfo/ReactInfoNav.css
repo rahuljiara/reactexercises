@@ -1,0 +1,36 @@
+/* 
+color : rgb(97,218,251);
+*/
+
+
+.nav nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:12rem;
+    width:100%;
+    background:rgb(32,35,42);
+    color :white;
+}
+
+.nav nav .logo {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav nav .logo > img {
+    padding-left:2rem;
+    width:5rem;
+    margin-right:1rem;
+}
+.nav nav .logo h1 {
+    font-size:3.8rem;
+    color:rgb(97,218,251);
+    cursor:pointer;
+}
+.nav nav .navContent > h2{
+    font-size: 2.5rem;
+    margin-right:4rem;
+    cursor:pointer; 
+}
+

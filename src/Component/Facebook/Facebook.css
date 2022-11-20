@@ -1,0 +1,515 @@
+/*------------------------------------------------------Nav bar -------------------------------------------------- */
+.fb-nav {
+    position: fixed;
+    top: 0;
+    height: 6rem;
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 1rem grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    z-index: 10;
+}
+
+/* -------------------left side -------------------------- */
+.fb-nav .fb-nav-left {
+    display: flex;
+    justify-content: left;
+    width: 30%;
+    padding-left: 1rem;
+}
+
+.fb-nav .fb-nav-left .fb-nav-left-logo img {
+    width: 4rem;
+    margin-right: 2rem;
+}
+
+.fb-nav .fb-nav-left .fb-nav-left-searchbox {
+    position: relative;
+    display: flex;
+}
+
+.fb-nav .fb-nav-left .fb-nav-left-searchbox input {
+
+    width: 25rem;
+    height: 90%;
+    text-align: center;
+    border-radius: 5rem;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    background: var(--fb-bg);
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.555);
+}
+
+.fb-nav .fb-nav-left .fb-nav-left-searchbox i {
+    position: absolute;
+    left: 2rem;
+    top: 1.3rem;
+    font-size: 1.7rem;
+}
+
+/* ----------------------middle Side ---------------------- */
+.fb-nav .fb-nav-middle {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    list-style: none;
+}
+
+.fb-nav .fb-nav-middle>li {
+    width: 10rem;
+    text-align: center;
+}
+
+.fb-nav .fb-nav-middle>li i {
+    font-size: 2.4rem;
+    color: grey;
+    cursor: pointer;
+    padding: 1.2rem 0;
+}
+
+#fb-notification {
+    position: relative;
+}
+
+#fb-notification::after {
+    position: absolute;
+    top: -.5rem;
+    right: 0;
+    content: "10+";
+    background: red;
+    padding: .3rem .8rem;
+    border-radius: 5rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.fb-nav .fb-nav-middle>li:hover i {
+    color: royalblue;
+    background: rgba(143, 143, 143, 0.284);
+    width: 8.5rem;
+    border-radius: .8rem;
+}
+
+#active {
+    position: relative;
+    color: royalblue;
+    padding: 1.2rem 0;
+    width: 8.5rem;
+    border-bottom: .3rem solid royalblue;
+}
+
+#active:hover {
+    background: transparent;
+    border-radius: 0;
+}
+
+
+/*  -------------------------------right Side ------------------------------------- */
+.fb-nav .fb-nav-right {
+    width: 35%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    list-style: none;
+}
+
+.fb-nav .fb-nav-right li img {
+    width: 2rem;
+    height: 2rem;
+    background: var(--fb-bg);
+    padding: 1rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.fb-nav .fb-nav-right li i {
+    width: 4rem;
+    height: 4rem;
+    background: var(--fb-bg);
+    border-radius: 50%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.fb-nav .fb-nav-right li i:hover {
+    background-color: rgb(215, 217, 220);
+    transition: all .2s;
+}
+
+.fb-nav .fb-nav-right li img:hover {
+    background-color: rgb(215, 217, 220);
+    transition: all .2s;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------- Home Page ----------------------------------------------------------------- */
+
+.fb-container {
+    position: absolute;
+    top: 6rem;
+    background: var(--fb-bg);
+    width: 100%;
+}
+
+.fb-home {
+    display: flex;
+    justify-content: space-between;
+
+}
+#new-message{
+    font-size:3rem;
+    z-index: 10;
+    position: absolute;
+    bottom:1rem;
+}
+
+
+/* --------------------------Home Page Left Section --------------------------- */
+.fb-home-left {
+    position: fixed;
+    left:0;
+    width: 28rem;
+    height: calc(100vh - 6rem);
+    overflow: auto;
+}
+
+.fb-home-left:hover::-webkit-scrollbar-thumb {
+    background: rgba(1, 44, 54, 0.712);
+    border-radius: .8rem;
+    width: 2rem;
+}
+
+::-webkit-scrollbar {
+    width: .6rem;
+}
+
+:-webkit-scrollbar-track {
+    background: pink;
+}
+
+.fb-home-left-box {
+    width: 94%;
+    margin: 0 3%;
+    height: 4.5rem;
+    /* margin-top:1rem; */
+    border-radius: .8rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.fb-home-left-box:hover {
+    background-color: rgb(215, 217, 220);
+    transition: .3s;
+}
+
+.fb-home-left-box img,
+.fb-home-left-box i {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    color: rgb(0, 179, 255);
+    font-size: 1.8rem
+        /* background:royalblue; */
+}
+
+#fb-home-left-profile {
+    margin-top: 2rem;
+}
+
+#fb-home-left-profile img {
+    background-color: royalblue;
+    border: .2rem solid black;
+    border-radius: 50%;
+}
+
+.fb-home-left-devider {
+    color: rgba(0, 0, 0, 0.578);
+    margin-left: 2rem;
+    position: relative;
+}
+
+.fb-home-left-devider::after {
+    position: absolute;
+    content: "Edit";
+    right: 1rem;
+    color: rgb(0, 64, 255);
+    cursor: pointer;
+}
+
+#train-game {
+    color: red;
+}
+
+#shoot-game {
+    color: rgb(5, 92, 44);
+}
+
+#devider-line {
+    width: 20rem;
+    height: .1rem;
+    border-radius: 5rem;
+    background: rgba(0, 0, 0, 0.591);
+}
+
+#bookmark-icon {
+    color: red;
+}
+
+#page-icon {
+    color: rgb(192, 0, 206);
+}
+
+#event-icon {
+    color: rgb(206, 127, 0);
+}
+
+#show-more-icon {
+    color: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.155);
+    border-radius: 50%;
+}
+
+
+
+
+/* --------------------------Home Page Right Section --------------------------- */
+
+.fb-home-right {
+    position: fixed;
+    right:0;
+    width: 30rem;
+    height: 100vh;
+}
+
+.fb-home-right-devider {
+    color: rgba(0, 0, 0, 0.578);
+    margin-left: 2rem;
+}
+
+.fb-home-right-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fb-home-right-box-icons i {
+    margin-right: 1.9rem;
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.568);
+    cursor: pointer;
+}
+
+.fb-home-right-contact-box {
+    width: 94%;
+    margin: 0 3%;
+    height: 4.5rem;
+    /* margin-top:1rem; */
+    border-radius: .8rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.fb-home-right-contact-box:hover {
+    background-color: rgb(215, 217, 220);
+    transition: .3s;
+}
+
+.fb-home-right-contact-box > i {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    color: rgb(10, 13, 14);
+    font-size: 1.8rem;
+    background: rgba(0, 100, 251, 0.105);
+    border: .2rem solid black;
+    border-radius: 50%;
+}
+
+.fb-home-right-contact-box p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#group-chat-icon {
+    background-color: transparent;
+    border: none;
+    background: rgb(215, 217, 220);
+}
+
+.online::after {
+    position: absolute;
+    bottom:0rem;
+    right:0;
+    content: '';
+    height: 1rem;
+    width: 1rem;
+background:rgb(0, 201, 0);
+border-radius:50%;
+}
+
+
+/*  --------------------------------------Home Page Middle Section --------------------------------------------- */
+.fb-main{
+    position: relative;
+    width:calc(100% - 60rem);
+    height:fit-content;
+    margin:0 30rem;
+    background:black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+.fb-main-status{
+    height:19rem;
+    width:95%;
+    margin:2rem 0;
+    display:grid;
+    grid-template-columns:repeat(5,auto);
+    justify-content: space-evenly;
+}
+.fb-main-status-card,#owner-status{
+    position: relative;
+    height:100%;
+    width:11rem;
+    cursor:pointer;
+    transition:object-fit 5s ease-in-out;
+}
+#owner-status{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .fb-main-status-card:hover,#owner-status:hover{
+    transform:scale(1.01);
+} */
+.fb-main-status-card:hover img{
+    object-fit:cover;
+    transition: 5s ease-in-out;
+}
+#owner-status:hover img{
+    filter:grayscale(.6);
+}
+#owner-status >img{
+    height:75%;
+    width:100%;
+    border-radius: .8rem .8rem 0 0 ;
+    transition: 1s;
+    background:rgba(0, 255, 251, 0.457);
+    object-fit:cover;
+}
+#owner-status p{
+    position: relative;
+    height:25%;
+    width:100%;
+    font-weight: 500;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0;           
+    background:white;
+    font-weight:bold;
+    border-radius: 0 0 .8rem .8rem;
+    z-index: 5;
+}
+#owner-status p i {
+    position: absolute;
+    top:-2.5rem;
+    background:royalblue;
+    color:white;
+    height:3.5rem;
+    width:3.5rem;
+    border-radius:50%;
+    font-size:1.8rem;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:.5rem solid white;
+}
+
+.fb-main-status-card > img{
+    height:100%;
+    width:100%;
+    border-radius: .8rem;
+    transition: 1s ease-in-out;
+}
+.fb-main-status-card p{
+ position: absolute;
+ bottom:1rem;
+ background:transparent;
+ color:white;
+ font-size:1.4rem;
+ font-weight:bold;
+ padding-left:1rem;
+}
+.fb-main-status-card i{
+    position: absolute;
+    left:1.5rem;
+    top:1.5rem;
+    width:4rem;
+    height:4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:2rem;
+    background-color: rgba(0, 255, 251, 0.457);
+    border-radius:50%;
+    border:.5rem solid white;
+}
+
+
+.fb-main-post{
+    height:12rem;
+    width:80%;
+    background:white;
+    margin:2rem 0;
+}
+.fb-main-create-room{
+    height:7rem;
+    width:80%;
+    background:white;
+    margin:2rem 0;
+}
+.fb-main-others-post{
+    height:50rem;
+    width:80%;
+    background:white;
+    margin:2rem 0;
+}
