@@ -95,46 +95,99 @@ const FacebookLeft = () => {
     </>
 }
 const FacebookMiddle = () => {
-return<>
-<div className="fb-main">
-    <div className="fb-main-status">
-        <div id="owner-status">
-        <img src="https://cdn-icons-png.flaticon.com/512/2810/2810494.png" />\
-            <p>  Create Story<i className="fa-solid fa-plus"></i> </p>
-        </div>
-        <div className="fb-main-status-card">
-                <i class="fa-solid fa-user"></i>
-            <img src="https://images.pexels.com/photos/8851507/pexels-photo-8851507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></img>
-           
-            <p> Ro-Hit Kumar</p>
-        </div>
-        <div className="fb-main-status-card">
-                <i class="fa-solid fa-user"></i>
-            <img src="https://images.pexels.com/photos/14426182/pexels-photo-14426182.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></img>
-           
-            <p> Chandan Aryan</p>
-        </div>
-        <div className="fb-main-status-card">
-                <i class="fa-solid fa-user"></i>
-            <img src="https://images.pexels.com/photos/14384827/pexels-photo-14384827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></img>
-           
-            <p> Gulshan Sah</p>
-        </div>
-        <div className="fb-main-status-card">
-                <i class="fa-solid fa-user"></i>
-            <img src="https://images.pexels.com/photos/12179283/pexels-photo-12179283.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"></img>
-           
-            <p>Guddu Kumar</p>
-        </div>
-    
-    </div>
-    
-    <div className="fb-main-post"></div>
-    <div className="fb-main-create-room"></div>
-    <div className="fb-main-others-post"></div>
-</div>
+    return <>
+        <div className="fb-main">
+            <div className="fb-main-status">
+                <div id="owner-status">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2810/2810494.png" />
+                    <p>  Create Story<i className="fa-solid fa-plus"></i> </p>
+                </div>
+                <div className="fb-main-status-card">
+                    <i class="fa-solid fa-user"></i>
+                    <img src="https://images.pexels.com/photos/8851507/pexels-photo-8851507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></img>
 
-</>
+                    <p> Ro-Hit Kumar</p>
+                </div>
+                <div className="fb-main-status-card">
+                    <i class="fa-solid fa-user"></i>
+                    <img src="https://images.pexels.com/photos/14426182/pexels-photo-14426182.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></img>
+
+                    <p> Chandan Aryan</p>
+                </div>
+                <div className="fb-main-status-card">
+                    <i class="fa-solid fa-user"></i>
+                    <img src="https://images.pexels.com/photos/14384827/pexels-photo-14384827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></img>
+
+                    <p> Gulshan Sah</p>
+                </div>
+                <div className="fb-main-status-card">
+                    <i class="fa-solid fa-user"></i>
+                    <img src="https://images.pexels.com/photos/12179283/pexels-photo-12179283.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"></img>
+
+                    <p>Guddu Kumar</p>
+                </div>
+
+            </div>
+
+            <div className="fb-main-post">
+                <div className="fb-main-post-upper">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2810/2810494.png" />
+                    <input type="text"
+                        placeholder="What's on your mind Rahul?" />
+                </div>
+                <hr id="post-devider" />
+                <div className="fb-main-post-lower  ">
+                    <p><i class="fa-solid fa-video" id="post-video"></i> Live video </p>
+                    <p> <i class="fa-solid fa-image" id="post-image"></i>Photo/video</p>
+                    <p> <i class="fa-regular fa-face-smile" id="post-feeling"></i> Feeling/activity</p>
+                </div>
+
+
+            </div>
+
+
+            <div className="fb-main-create-room">
+                <p><i class="fa-solid fa-video"></i> Create Room </p>
+                <i class="fa-solid fa-user online active-user"></i>
+                <i class="fa-solid fa-user online active-user"></i>
+                <i class="fa-solid fa-user online active-user"></i>
+            </div>
+
+
+
+            <div className="fb-main-others-post">
+                <div className="fb-main-others-post-header">
+                    <i class="fa-solid fa-user active-user"></i>
+                    <div className="others-post-title">
+                        <div>
+                            <span>Ro-Hit Kumar </span>
+                            is with
+                            <span> Guddu Kumar </span>
+                            and 3 others
+                        </div>
+                        <div> November 21, 2022 <i class="fa-solid fa-earth-asia"></i></div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+
+                <div className="others-post-image">
+                    <img src="https://images.pexels.com/photos/2405039/pexels-photo-2405039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+                </div>
+                <div className="fb-main-others-post-footer">
+                    <div className="fb-main-others-post-footer-upper">
+                  <p>  <i class="fa-solid fa-thumbs-up"></i>10k</p>
+                  <p>894 Comments</p>
+                    </div>
+                    <hr id="post-devider" />
+                    <div className="fb-main-others-post-footer-bottom">
+                        <p><i class="fa-solid fa-thumbs-up" id="post-like"></i>Like</p>
+                        <p><i class="fa-regular fa-message" id="post-comment"></i>Comment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </>
 }
 const FacebookRight = () => {
     return <>
@@ -187,7 +240,7 @@ const FacebookRight = () => {
                 <i class="fa-solid fa-plus" id="group-chat-icon"></i>
                 <p>Create New Group</p>
             </div>
-           
+
         </div>
     </>
 }
@@ -200,7 +253,7 @@ const FacebookHome = () => {
                 <FacebookLeft />
                 <FacebookMiddle />
                 <FacebookRight />
-            
+
             </div>
         </div>
     </>

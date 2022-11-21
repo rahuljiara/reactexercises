@@ -175,18 +175,19 @@
     justify-content: space-between;
 
 }
-#new-message{
-    font-size:3rem;
+
+#new-message {
+    font-size: 3rem;
     z-index: 10;
     position: absolute;
-    bottom:1rem;
+    bottom: 1rem;
 }
 
 
 /* --------------------------Home Page Left Section --------------------------- */
 .fb-home-left {
     position: fixed;
-    left:0;
+    left: 0;
     width: 28rem;
     height: calc(100vh - 6rem);
     overflow: auto;
@@ -302,7 +303,7 @@
 
 .fb-home-right {
     position: fixed;
-    right:0;
+    right: 0;
     width: 30rem;
     height: 100vh;
 }
@@ -343,7 +344,7 @@
     transition: .3s;
 }
 
-.fb-home-right-contact-box > i {
+.fb-home-right-contact-box>i {
     position: relative;
     width: 3rem;
     height: 3rem;
@@ -373,143 +374,450 @@
 
 .online::after {
     position: absolute;
-    bottom:0rem;
-    right:0;
+    bottom: 0rem;
+    right: 0;
     content: '';
     height: 1rem;
     width: 1rem;
-background:rgb(0, 201, 0);
-border-radius:50%;
+    background: rgb(0, 201, 0);
+    border-radius: 50%;
 }
 
 
 /*  --------------------------------------Home Page Middle Section --------------------------------------------- */
-.fb-main{
+.fb-main {
     position: relative;
-    width:calc(100% - 60rem);
-    height:fit-content;
-    margin:0 30rem;
-    background:black;
-    display:flex;
+    width: calc(100% - 60rem);
+    height: fit-content;
+    margin: 0 30rem;
+    display: flex;
     flex-direction: column;
     align-items: center;
     overflow-y: scroll;
 }
-.fb-main-status{
-    height:19rem;
-    width:95%;
-    margin:2rem 0;
-    display:grid;
-    grid-template-columns:repeat(5,auto);
+
+.fb-main-status {
+    height: 19rem;
+    width: 95%;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
     justify-content: space-evenly;
 }
-.fb-main-status-card,#owner-status{
+
+.fb-main-status-card,
+#owner-status {
     position: relative;
-    height:100%;
-    width:11rem;
-    cursor:pointer;
-    transition:object-fit 5s ease-in-out;
+    height: 100%;
+    width: 11rem;
+    cursor: pointer;
+    transition: webkit-object-fit 1s ease-in-out;
 }
-#owner-status{
-    display:flex;
+
+#owner-status {
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 /* .fb-main-status-card:hover,#owner-status:hover{
     transform:scale(1.01);
 } */
-.fb-main-status-card:hover img{
-    object-fit:cover;
-    transition: 5s ease-in-out;
+.fb-main-status-card:hover img,
+#owner-status:hover img {
+    object-fit: cover;
+    transition: webkit-object-fit 1s ease-in-out;
 }
-#owner-status:hover img{
-    filter:grayscale(.6);
+
+#owner-status>img {
+    height: 75%;
+    width: 100%;
+    border-radius: .8rem .8rem 0 0;
+    transition: webkit-object-fit 1s ease-in-out;
+    background: rgba(65, 105, 225, 0.667);
 }
-#owner-status >img{
-    height:75%;
-    width:100%;
-    border-radius: .8rem .8rem 0 0 ;
-    transition: 1s;
-    background:rgba(0, 255, 251, 0.457);
-    object-fit:cover;
-}
-#owner-status p{
+
+#owner-status>p {
     position: relative;
-    height:25%;
-    width:100%;
+    height: 25%;
+    width: 100%;
     font-weight: 500;
     font-size: 1.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:0;           
-    background:white;
-    font-weight:bold;
+    margin: 0;
+    background: white;
+    font-weight: bold;
     border-radius: 0 0 .8rem .8rem;
-    z-index: 5;
 }
+
 #owner-status p i {
     position: absolute;
-    top:-2.5rem;
-    background:royalblue;
-    color:white;
-    height:3.5rem;
-    width:3.5rem;
-    border-radius:50%;
-    font-size:1.8rem;
+    top: -2.5rem;
+    background: royalblue;
+    color: white;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    font-size: 1.8rem;
     font-weight: 100;
     display: flex;
     justify-content: center;
     align-items: center;
-    border:.5rem solid white;
+    border: .5rem solid white;
 }
 
-.fb-main-status-card > img{
-    height:100%;
-    width:100%;
+.fb-main-status-card>img {
+    height: 100%;
+    width: 100%;
     border-radius: .8rem;
     transition: 1s ease-in-out;
 }
-.fb-main-status-card p{
- position: absolute;
- bottom:1rem;
- background:transparent;
- color:white;
- font-size:1.4rem;
- font-weight:bold;
- padding-left:1rem;
-}
-.fb-main-status-card i{
+
+.fb-main-status-card p {
     position: absolute;
-    left:1.5rem;
-    top:1.5rem;
-    width:4rem;
-    height:4rem;
+    bottom: 1rem;
+    background: transparent;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+
+.fb-main-status-card i {
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+    width: 4rem;
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size:2rem;
-    background-color: rgba(0, 255, 251, 0.457);
+    font-size: 2rem;
+    background-color: rgba(0, 106, 255, 0.772);
+    border-radius: 50%;
+    border: .5rem solid white;
+}
+
+
+
+/*  -------------------------------Home Page Post Section -------------------------------------------- */
+.fb-main-post {
+    height: 12rem;
+    width: 75%;
+    background: white;
+    margin: 2rem 0;
+    border-radius: .8rem;
+    box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.667);
+}
+
+.fb-main-post-upper {
+    height: 49%;
+    margin-bottom: 1%;
+    /* background-color: rgb(255, 10, 10); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fb-main-post-upper img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: rgba(0, 63, 254, 0.594);
+    border: .05rem solid black;
+    margin-left: 1.2rem;
+    cursor: pointer;
+
+}
+
+.fb-main-post-upper input {
+    width: calc(100% - 11rem);
+    height: 4rem;
+    border-radius: 5rem;
+    background-color: rgba(0, 63, 254, 0.594);
+    border: .05rem solid black;
+    outline: none;
+    margin-right: 2rem;
+    padding: 0 1rem;
+    background: rgb(240, 242, 245);
+    border: none;
+    box-shadow: 0 0 .2rem rgba(205, 202, 202, 0.692);
+    opacity: .9;
+    font-size: 1.6rem;
+    color: grey;
+    cursor: pointer;
+}
+
+.fb-main-post-upper input:hover {
+    opacity: 1;
+}
+
+.fb-main-post-upper input:focus {
+    cursor: text;
+}
+
+.fb-main-post-lower {
+    height: 49%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.fb-main-post-lower p {
+    width: 14rem;
+    height: 4rem;
+    margin: 0 1rem;
+    border-radius: .8rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: grey;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 1rem;
+}
+
+.fb-main-post-lower p>i {
+    margin-right: .6rem;
+    margin-top: .4rem;
+    font-size: 2.5rem;
+
+}
+
+#post-video {
+    color: rgb(240, 40, 73);
+}
+
+#post-image {
+    color: rgb(69, 189, 98);
+}
+
+#post-feeling {
+    color: rgba(255, 180, 6, 0.993);
+}
+
+#post-devider {
+    width: 95%;
+    height: .1rem;
+    border: none;
+    background: grey;
+}
+
+.fb-main-post-lower p:hover {
+    background: rgb(240, 242, 245);
+}
+
+
+
+/* ---------------------------------------  Create Room Section --------------------------------------------------- */
+
+.fb-main-create-room {
+    height: 7rem;
+    width: 75%;
+    background: white;
+    box-shadow: 0 0 .3rem rgba(0, 0, 0, 0.396);
+    border-radius: .8rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.fb-main-create-room p {
+    width: 14rem;
+    height: 3.7rem;
+
+    margin: 0 1rem;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(33, 111, 219);
+    border: .2rem solid rgb(231, 243, 255);
+}
+
+.fb-main-create-room p:hover {
+    background-color: rgba(255, 0, 247, 0.09);
+}
+
+.fb-main-create-room p i {
+    margin-right: 1rem;
+    color: rgb(179, 61, 175);
+
+}
+
+.active-user {
+    position: relative;
+    height: 3rem;
+    width: 3rem;
+    border: .1rem solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    background: rgba(0, 64, 255, 0.216);
+    font-size: 1.8rem;
+}
+
+
+
+
+
+
+/* ---------------------------------------  Other's post Section ---------------------------------------------------* */
+
+.fb-main-others-post {
+    height: 50rem;
+    width: 75%;
+    background: white;
+    margin: 2rem 0;
+    border-radius: .8rem;
+    box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.352);
+}
+
+.fb-main-others-post-header {
+    width: calc(100% - 3rem);
+    height: 4rem;
+    margin: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.others-post-title i {
+    cursor: pointer;
+}
+
+.fb-main-others-post-header .others-post-title {
+    width: 80%;
+    height: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.fb-main-others-post-header>i {
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.others-post-title div {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: grey;
+
+}
+
+.others-post-title div:last-child {
+    cursor: pointer;
+}
+
+.others-post-title div span {
+    font-weight: bold;
+    margin: 0.6rem;
+    color: black;
+    cursor: pointer;
+}
+
+.others-post-title div span:first-child {
+    margin-left: 0;
+}
+
+.others-post-title div i {
+    margin-left: 1rem;
+    margin-top: .3rem;
+    font-size: 1.3rem;
+}
+
+.others-post-image img {
+    width: 100%;
+    height: fit-content;
+}
+
+.fb-main-others-post-footer {
+    height: 7rem;
+
+}
+
+.fb-main-others-post-footer-upper,
+.fb-main-others-post-footer-bottom {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.fb-main-others-post-footer-upper {
+    height: 3rem;
+    justify-content: space-between;
+    margin:0 2rem;
+}
+.fb-main-others-post-footer-upper p{
+    font-size:1.5rem;
+    color:grey;
+    cursor: pointer;
+}
+.fb-main-others-post-footer-upper p:hover{
+    text-decoration:underline;
+}
+.fb-main-others-post-footer-upper p i {
+    color:white;
+    background:royalblue;
     border-radius:50%;
-    border:.5rem solid white;
+    padding:.5rem;
+    font-size:1.2rem;
 }
 
 
-.fb-main-post{
-    height:12rem;
-    width:80%;
-    background:white;
-    margin:2rem 0;
+
+
+.fb-main-others-post-footer-bottom {
+    height: 4rem;
+    width:90%;
+    margin:0 5%;
+    justify-content: space-evenly;
 }
-.fb-main-create-room{
-    height:7rem;
-    width:80%;
-    background:white;
-    margin:2rem 0;
+
+.fb-main-others-post-footer-bottom p {
+    width:45%;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: rgb(50, 50, 50);
+    padding:1rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:.8rem;
+    cursor:pointer;
 }
-.fb-main-others-post{
-    height:50rem;
-    width:80%;
-    background:white;
-    margin:2rem 0;
+.fb-main-others-post-footer-bottom p:hover {
+    background: rgb(227, 228, 229);
+}
+
+.fb-main-others-post-footer-bottom p i {
+    margin-right: 1rem;
+    font-size: 2rem;
+
+}
+#post-like{
+    color:royalblue;
+}
+#post-comment{
+    font-size: 1.7rem;
+    margin-top:.5rem;
 }
