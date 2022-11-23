@@ -34,3 +34,52 @@ color : rgb(97,218,251);
     cursor:pointer; 
 }
 
+
+@media screen and (max-width:550px){
+    .nav nav{
+        height:7rem;
+    }
+    .nav nav .logo > img {
+        padding-left:1rem;
+        width:3rem;
+    }
+    .nav nav .logo h1 {
+        font-size:2rem;
+    }
+    .nav nav .navContent > h2{
+        font-size: 1.5rem;
+        margin-right:1rem;
+    }
+}
+@media screen and (max-width:300px){
+    .nav nav{
+        height:7rem;
+    }
+    .nav nav .logo > img {
+        width:2.5rem;
+    }
+    .nav nav .logo h1 {
+        font-size:1.5rem;
+    }
+    .nav nav .navContent > h2{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width:250px){
+    .nav nav{
+        height:7rem;
+    }
+    .nav nav .logo > img {
+        margin-right:.5rem;
+        padding-left:.5rem;
+        width:2rem;
+    }
+    .nav nav .logo h1 {
+        font-size:1.2rem;
+    }
+    .nav nav .navContent > h2{
+        font-size: 1rem;
+        margin-right:.5rem;
+    }
+}
+

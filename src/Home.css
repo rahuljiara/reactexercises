@@ -5,44 +5,63 @@
     background: rgb(20, 18, 18);
     color: white;
     margin: 0;
-    overflow: hidden;
 }
 
-.container>h1 {
-    font-size: 10rem;
+.container .head {
+    width: 60%;
+
+    margin: 5rem 20%;
+}
+
+.container .head>h1 {
+    font-size: 8rem;
     text-align: center;
     letter-spacing: .5rem;
-    color:var(--react-color);
+    color: var(--react-color);
     text-shadow: .3rem .4rem 1rem rgba(255, 255, 255, 0.533),
-    .3rem .4rem 1rem rgba(0, 255, 94, 0.433);
+        .3rem .4rem 1rem rgba(0, 255, 94, 0.433);
+    padding: 0;
+    margin: 0;
+}
+
+.container .head>p {
+    font-size: 3rem;
+    text-align: right;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 0 1rem 0 0;
+    color: var(--react-color);
 }
 
 .container .project-container {
-    height: 65vh;
+    height:fit-content;
     width: 100%;
     display: grid;
-    grid-template-columns:repeat(4, auto);
-    grid-template-rows:repeat(5, auto);
+    grid-template-columns: repeat(5, auto);
+    grid-row-gap:2rem;
     justify-content: space-evenly;
+
 }
 
 .container .project-container a {
-    height: 8rem;
-    width: 25rem;  
-    color:wheat;
-    text-decoration:none;
-    
+    height: 6rem;
+    width: 18rem;
+    color: wheat;
+    text-decoration: none;
+
 }
+
 .container .project-container .project-card {
-    height: 8rem;
-    width: 25rem;
+    height: 6rem;
+    width: 18rem;
     border-radius: .8rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
     box-shadow: 0 0 1rem rgba(255, 255, 255, 0.3),
-                0 0 2rem rgba(255, 255, 255, 0.234),
-                0 0 3rem rgba(255, 255, 255, 0.134);
+        0 0 2rem rgba(255, 255, 255, 0.234),
+        0 0 3rem rgba(255, 255, 255, 0.134);
 }
 
 .container .project-container .project-card .project-logo {
@@ -56,8 +75,8 @@
 }
 
 .container .project-container .project-card .project-logo>img {
-    width: 5rem;
-    height: 5rem;
+    width: 3.5rem;
+    height: 3.5rem;
 
 }
 
@@ -70,6 +89,115 @@
 }
 
 .container .project-container .project-card .project-title>h2 {
-    font-size: 3rem;
+    font-size: 2rem;
 
+}
+
+@media screen and (max-width:1250px) {
+    .container .head>h1 {
+        font-size: 6rem;
+    }
+
+    .container .head>p {
+        font-size: 3rem;
+
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .container .head {
+        width: 80%;
+        margin: 5rem 10%;
+    }
+
+    .container .project-container {
+        grid-template-columns: repeat(4, auto);
+    }
+}
+@media screen and (max-width:750px) {
+    .container .head {
+        width: 90%;
+        margin: 5rem 5%;
+    }
+
+    .container .head>h1 {
+        font-size: 5rem;
+    }
+
+
+    .container .project-container {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+@media screen and (max-width:600px) {
+    .container .head {
+        width: 100%;
+        margin: 5rem 0;
+    }
+   
+    .container .head>h1 {
+        font-size: 3.5rem;
+    }
+
+
+    .container .project-container {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+@media screen and (max-width:400px) {
+    .container .head {
+        width: 100%;
+        margin: 5rem 0;
+    }
+    .container .head {
+        width: 80%;
+        margin: 5rem 10%;
+    }
+    .container .project-container .project-card .project-title>h2 {
+        font-size: 1.6rem;
+    
+    }
+    .container .head>h1 {
+        font-size: 5rem;
+    }
+    .container .head>p {
+        font-size: 1.8rem;
+    }
+    .container .project-container .project-card ,.container .project-container a{
+        height: 5rem;
+        width: 14rem;
+    }
+    .container .project-container .project-card .project-logo>img {
+        width: 2.7rem;
+        height: 2.7rem;
+    }
+}
+@media screen and (max-width:310px) {
+.container{
+    height:fit-content;
+
+}
+    .container .project-container {
+        grid-template-columns: repeat(1, auto);
+        margin-bottom:2rem;  
+
+    }
+    .container .project-container .project-card{
+        height: 10rem;
+        width: 25rem;
+    }
+    .container .head>h1 {
+        font-size: 5rem;
+    }
+   
+    .container .project-container .project-card ,.container .project-container a{
+        height: 5rem;
+        width: 14rem;
+    }
+    .container .head>h1{
+        font-size:2rem;
+    }
+    .container .head>p{
+        font-size:1rem;
+    }
 }

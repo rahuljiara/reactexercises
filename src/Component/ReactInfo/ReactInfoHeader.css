@@ -3,7 +3,7 @@
     background:rgb(40,44,52);
     background-image:url("https://cdn-icons-png.flaticon.com/512/3393/3393920.png");
     background-repeat: no-repeat;
-    background-position: center 95%;
+    background-position: center;
     background-size: 40%;
     color:white;
 }
@@ -11,15 +11,61 @@
     font-size: 6rem;
     margin-left:8rem;
 }
-
-
+.header > p {
+    font-size: 1.8rem;
+    margin:0 8rem;
+    color:rgb(222, 222, 222);
+    text-align: justify;
+}
 
 .header > ul li {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     width:fit-content;
-    margin-left:12rem;
+    margin:0 8rem 0 12rem;
+    color:rgba(180, 180, 180, 0.977);
 }
 .header > ul li::marker {
-color:rgb(97,218,251);
-font-size:3rem;
+color:rgba(97, 218, 251, 0.712);
+font-size:2rem;
+}
+
+@media screen and (max-width:550px){
+    .header{
+        background-size: 80%;
+    }
+    .header > h1 {
+        font-size: 6rem;
+        margin-left:4rem;
+    }
+    .header > p {
+        font-size: 1.8rem;
+        margin:3rem;
+    }
+    
+    .header > ul li {
+        font-size: 1.5rem;
+        margin:0 1rem .5rem 2rem;
+        
+    }
+}
+@media screen and (max-width:300px){
+    .header > h1 {
+        text-align:center;
+        font-size: 4rem;
+        margin-left:0;
+    }
+    .header > p {
+        font-size: 1.3rem;
+        margin:3rem;
+    }
+    
+    .header > ul li {
+        font-size: 1.2rem;
+        margin:0 1rem .5rem 2rem;
+        
+    }
+    .header > ul li::marker {
+        color:rgba(97, 218, 251, 0.712);
+        font-size:1.5rem;
+        }
 }

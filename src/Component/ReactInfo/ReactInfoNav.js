@@ -11,7 +11,7 @@ const ReactInfoNav = () => {
           <h1>ReactFacts</h1>
         </div>
         <div className="navContent">
-          <h2>React Course - Project 1</h2>
+          <h2>FrontEnd Exercise -1</h2>
         </div>
       </nav>
     </div>

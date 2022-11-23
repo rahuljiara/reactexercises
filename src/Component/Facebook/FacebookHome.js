@@ -93,6 +93,10 @@ const FacebookLeft = () => {
                 <i class="fa-solid fa-gun" id="shoot-game"></i>
                 <h2>Shoot Out 2025</h2>
             </div>
+            <div className="fb-home-left-box">
+            <i class="fa-solid fa-globe"></i>
+                <h2>FrontEnd Exercise -3</h2>
+            </div>
         </div>
     </>
 }
@@ -157,7 +161,7 @@ const FacebookMiddle = () => {
             </div>
 
 
-
+{/* post 1 */}
             <div className="fb-main-others-post">
                 <div className="fb-main-others-post-header">
                     <img src="https://cdn-icons-png.flaticon.com/512/2810/2810494.png" />
@@ -206,6 +210,212 @@ const FacebookMiddle = () => {
                             <span> ⤷ </span>
                             <img src="https://cdn-icons-png.flaticon.com/512/2810/2810494.png" />
                             <p> Rahul Ji Ara replied ‧ 11 Reply </p>
+                        </div>
+
+                    </div>
+                    <div className="comments-footer-write-comment">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2810/2810494.png" className="online" />
+                        <input type="text" placeholder="Write a comment... "
+                        />
+                        <div className="comments-footer-write-comment-icons">
+                            <img src="https://cdn-icons-png.flaticon.com/512/134/134819.png" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/569/569501.png" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/685/685655.png" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/739/739272.png" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/3342/3342137.png" />
+                        </div>
+                    </div>
+                    <p> Press Enter to post</p>
+
+                </div>
+
+            </div>
+        {/* post 2 */}
+            <div className="fb-main-others-post">
+                <div className="fb-main-others-post-header">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2810/2810494.png" />
+                    <div className="others-post-title">
+                        <div>
+                            <span>Gulshan Sah </span> is with <span> Rahul Ji Ara </span>
+                            and 6 others
+                        </div>
+                        <div> November 21, 2022 ‧ <i class="fa-solid fa-earth-asia"></i></div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+
+                <div className="others-post-image">
+                    <img src="https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&w=600" />
+                </div>
+
+                <div className="fb-main-others-post-footer">
+                    <div className="fb-main-others-post-footer-upper">
+                        <p>  <i class="fa-solid fa-thumbs-up"></i>10k</p>
+                        <p>84 Comments</p>
+                    </div>
+                    <hr id="post-devider" />
+                    <div className="fb-main-others-post-footer-bottom">
+                        <p><i class="fa-solid fa-thumbs-up" id="post-like"></i>Like</p>
+                        <p><i class="fa-regular fa-message" id="post-comment"></i>Comment</p>
+                        <p><i class="fa-solid fa-share"></i>Share</p>
+                    </div>
+                </div>
+                <hr id="post-devider" />
+                <div className="comments">
+                    <p>View 10 more comments</p>
+                    <div className="comments-upper">
+                        <i class="fa-solid fa-user active-user"></i>
+                        <p> <span>Guddu Kumar</span> <br />
+                            <span>Just Chill 😍😍 </span>
+                        </p>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div className="comments-middle">
+                        <div className="comments-middle-reaction"><p> <span>Like </span>
+                            <span>Reply</span>
+                            <span>1m</span>
+                        </p></div>
+                        <div className="comments-middle-reply">
+                            <span> ⤷ </span>
+                            <img src="https://cdn-icons-png.flaticon.com/512/2810/2810494.png" />
+                            <p> Gulshan Sah replied ‧ 8 Reply </p>
+                        </div>
+
+                    </div>
+                    <div className="comments-footer-write-comment">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2810/2810494.png" className="online" />
+                        <input type="text" placeholder="Write a comment... "
+                        />
+                        <div className="comments-footer-write-comment-icons">
+                            <img src="https://cdn-icons-png.flaticon.com/512/134/134819.png" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/569/569501.png" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/685/685655.png" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/739/739272.png" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/3342/3342137.png" />
+                        </div>
+                    </div>
+                    <p> Press Enter to post</p>
+
+                </div>
+
+            </div>
+        {/* post 3 */}
+            <div className="fb-main-others-post">
+                <div className="fb-main-others-post-header">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2810/2810494.png" />
+                    <div className="others-post-title">
+                        <div>
+                            <span>Ritik Kumar </span> is with <span> Ro-Hit Kumar </span>
+                            and 6 others
+                        </div>
+                        <div> Going To Space 🌏 ‧ January 02, 2022 ‧ <i class="fa-solid fa-earth-asia"></i></div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+
+                <div className="others-post-image">
+                    <img src="https://images.pexels.com/photos/73871/rocket-launch-rocket-take-off-nasa-73871.jpeg?auto=compress&cs=tinysrgb&w=600" />
+                </div>
+
+                <div className="fb-main-others-post-footer">
+                    <div className="fb-main-others-post-footer-upper">
+                        <p>  <i class="fa-solid fa-thumbs-up"></i>12.4k</p>
+                        <p>1204 Comments</p>
+                    </div>
+                    <hr id="post-devider" />
+                    <div className="fb-main-others-post-footer-bottom">
+                        <p><i class="fa-solid fa-thumbs-up" id="post-like"></i>Like</p>
+                        <p><i class="fa-regular fa-message" id="post-comment"></i>Comment</p>
+                        <p><i class="fa-solid fa-share"></i>Share</p>
+                    </div>
+                </div>
+                <hr id="post-devider" />
+                <div className="comments">
+                    <p>View 10 more comments</p>
+                    <div className="comments-upper">
+                        <i class="fa-solid fa-user active-user"></i>
+                        <p> <span>Ro-Hit Kumar</span> <br />
+                            <span> Space Guy Of India </span>
+                        </p>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div className="comments-middle">
+                        <div className="comments-middle-reaction"><p> <span>Like </span>
+                            <span>Reply</span>
+                            <span>1y</span>
+                        </p></div>
+                        <div className="comments-middle-reply">
+                            <span> ⤷ </span>
+                            <img src="https://cdn-icons-png.flaticon.com/512/2810/2810494.png" />
+                            <p> Ritik Kumar ‧ 11 Reply </p>
+                        </div>
+
+                    </div>
+                    <div className="comments-footer-write-comment">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2810/2810494.png" className="online" />
+                        <input type="text" placeholder="Write a comment... "
+                        />
+                        <div className="comments-footer-write-comment-icons">
+                            <img src="https://cdn-icons-png.flaticon.com/512/134/134819.png" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/569/569501.png" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/685/685655.png" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/739/739272.png" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/3342/3342137.png" />
+                        </div>
+                    </div>
+                    <p> Press Enter to post</p>
+
+                </div>
+
+            </div>
+            <div className="fb-main-others-post">
+                <div className="fb-main-others-post-header">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2810/2810494.png" />
+                    <div className="others-post-title">
+                        <div>
+                            <span>Guddu Kumar </span> is with <span> Ritik Kumar </span>
+                            and 6 others
+                        </div>
+                        <div> November 21, 2020 ‧ <i class="fa-solid fa-earth-asia"></i></div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+
+                <div className="others-post-image">
+                    <img src="https://images.pexels.com/photos/1543762/pexels-photo-1543762.jpeg?auto=compress&cs=tinysrgb&w=600" />
+                </div>
+
+                <div className="fb-main-others-post-footer">
+                    <div className="fb-main-others-post-footer-upper">
+                        <p>  <i class="fa-solid fa-thumbs-up"></i>4k</p>
+                        <p>204 Comments</p>
+                    </div>
+                    <hr id="post-devider" />
+                    <div className="fb-main-others-post-footer-bottom">
+                        <p><i class="fa-solid fa-thumbs-up" id="post-like"></i>Like</p>
+                        <p><i class="fa-regular fa-message" id="post-comment"></i>Comment</p>
+                        <p><i class="fa-solid fa-share"></i>Share</p>
+                    </div>
+                </div>
+                <hr id="post-devider" />
+                <div className="comments">
+                    <p>View 10 more comments</p>
+                    <div className="comments-upper">
+                        <i class="fa-solid fa-user active-user"></i>
+                        <p> <span>Rahul Ji Ara</span> <br />
+                            <span> Happy BirthDay Guddu</span>
+                        </p>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div className="comments-middle">
+                        <div className="comments-middle-reaction"><p> <span>Like </span>
+                            <span>Reply</span>
+                            <span>2y</span>
+                        </p></div>
+                        <div className="comments-middle-reply">
+                            <span> ⤷ </span>
+                            <img src="https://cdn-icons-png.flaticon.com/512/2810/2810494.png" />
+                            <p> Guddu Kumar replied ‧ 5 Reply </p>
                         </div>
 
                     </div>

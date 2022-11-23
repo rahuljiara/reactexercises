@@ -157,7 +157,7 @@
     height: 2.5rem;
     outline: none;
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     border: 0;
     text-align: center;
     display: flex;
@@ -168,7 +168,7 @@
 .airbnb-home .left .airbnb-card .form-row .form-row-col2 select option {
     text-align: center;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .submit-btn {

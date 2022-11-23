@@ -56,43 +56,45 @@ const AirbnbHome = () => {
                         <form>
                             <div className="form-row">
                                 <div className="form-row-col1"><h2>Location</h2>
-                                    <input type="text" placeholder="Anywhere" />
+                                    <input type="text" placeholder="Anywhere" required/>
                                 </div>
                             </div>
                             <div className="form-row">
                                 <div className="form-row-col2"><h2>Check In</h2>
-                                    <input type="date" placeholder="Anywhere" />
+                                    <input type="date" required/>
                                 </div>
                                 <hr className="hr" />
                                 <div className="form-row-col2"><h2>Check Out</h2>
-                                    <input type="date" placeholder="Anywhere" />
+                                    <input type="date" required/>
                                 </div>
 
                             </div>
                             <div className="form-row">
                                 <div className="form-row-col2"><h2>Adult</h2>
-                                    <select>
+                                    <select required>
+                                        <option value="0">FrontEnd</option>
                                         <option value="1">1</option>
-                                        <option value="1">2</option>
-                                        <option value="1">3</option>
-                                        <option value="1">4</option>
-                                        <option value="1">5</option>
-                                        <option value="1">6</option>
-                                        <option value="1">7</option>
-                                        <option value="1">8</option>
-                                        <option value="1">9</option>
-                                        <option value="1">10</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
                                     </select>
                                 </div>
                                 <hr className="hr" />
                                 <div className="form-row-col2"><h2>Children</h2>
-                                    <select>
+                                    <select required>
+                                        <option value="0">Exercise - 2</option>
                                         <option value="1">1</option>
-                                        <option value="1">2</option>
-                                        <option value="1">3</option>
-                                        <option value="1">4</option>
-                                        <option value="1">5</option>
-                                        <option value="1">6</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
                                     </select>
                                 </div>
 

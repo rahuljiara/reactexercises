@@ -628,6 +628,7 @@
     display: flex;
     justify-content: left;
     align-items: center;
+    margin-bottom:1rem;
 }
 
 .fb-main-create-room p {
@@ -681,11 +682,13 @@
     height: fit-content;
     width: 75%;
     background: white;
-    margin: 2rem 0;
+    margin: .5rem 0;
     border-radius: .8rem;
     box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.352);
 }
-
+.fb-main-others-post:first-child{
+    margin-top:2rem;
+}
 .fb-main-others-post-header {
     width: calc(100% - 3rem);
     height: fit-content;

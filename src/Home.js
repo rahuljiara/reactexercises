@@ -94,7 +94,10 @@ const ProjectCard = (props) => {
 const Home = () => {
     return <>
         <div className="container">
-            <h1>React Exercise</h1>
+            <div className="head">
+            <h1>FrontEnd Exercise</h1>
+            <p>advance styling . . .</p>
+            </div> 
             <div className="project-container">
                 {ProjectList.map((x) =>
                     <ProjectCard

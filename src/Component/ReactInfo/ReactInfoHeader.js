@@ -6,7 +6,8 @@ const ReactInfoHeader = () => {
     return (
         <div className="header">
             <ReactInfoNav/>
-            <h1>Fun Fact About React </h1>
+            <h1>React</h1>
+            <p>React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.</p>
             <ul>
                 <li>Was first released in 2013.</li>
                 <li>was created by jordan walkie.</li>
