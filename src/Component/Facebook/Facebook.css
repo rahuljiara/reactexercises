@@ -1278,8 +1278,8 @@
     }
 }
 @media screen and (max-width:265px){
-body{
+.fb-container{
 zoom:.5;
-
+height:100vh;
 }
 }

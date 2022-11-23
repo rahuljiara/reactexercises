@@ -1,7 +1,26 @@
 import React from 'react'
+import { useState } from 'react'
 import "./Airbnb.css"
 
 const AirbnbNav = () => {
+    const [airbnbNavStyle, setAirbnbNavStyle] = useState({
+        maxHeight: "0vh"
+    })
+
+    const airbnbNavToggle = () => {
+        console.log("object")
+        if (airbnbNavStyle.maxHeight == "0vh") {
+            setAirbnbNavStyle({
+                maxHeight: "100vh",
+            })
+        }
+        else{
+            setAirbnbNavStyle({
+                maxHeight: "0vh"
+            })
+        }
+
+    }
     return <>
         <nav className="airbnb-nav-container">
             <div className="airbnb-nav-logo">
@@ -9,12 +28,13 @@ const AirbnbNav = () => {
                 <h1>airbnb</h1>
             </div>
 
-            <ul>
+            <ul style={airbnbNavStyle}>
                 <li>Become a host</li>
                 <li>help</li>
                 <li>sign up</li>
                 <li>log in</li>
             </ul>
+            <i class="fa-solid fa-bars" id="airbnb-menu-icon" onClick={airbnbNavToggle}></i>
         </nav>
     </>
 }
@@ -43,7 +63,7 @@ const AirbnbHome = () => {
                                 <div className="form-row-col2"><h2>Check In</h2>
                                     <input type="date" placeholder="Anywhere" />
                                 </div>
-                                <hr className="hr"/>
+                                <hr className="hr" />
                                 <div className="form-row-col2"><h2>Check Out</h2>
                                     <input type="date" placeholder="Anywhere" />
                                 </div>
@@ -64,7 +84,7 @@ const AirbnbHome = () => {
                                         <option value="1">10</option>
                                     </select>
                                 </div>
-                                <hr className="hr"/>
+                                <hr className="hr" />
                                 <div className="form-row-col2"><h2>Children</h2>
                                     <select>
                                         <option value="1">1</option>
@@ -77,8 +97,8 @@ const AirbnbHome = () => {
                                 </div>
 
                             </div>
-                
-                                    <button type="submit" className="submit-btn">Search</button>
+
+                            <button type="submit" className="submit-btn">Search</button>
 
                         </form>
                     </div>

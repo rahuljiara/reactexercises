@@ -16,7 +16,7 @@
 .airbnb-nav-logo img {
     width: 3.5rem;
     height: 3.5rem;
-    margin-right: 1rem;
+    margin:0 1rem;
 }
 
 .airbnb-nav-logo {
@@ -33,6 +33,13 @@
     font-weight: 800;
 }
 
+.airbnb-nav-container>ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .airbnb-nav-container>ul li {
     display: inline;
     margin-right: 3rem;
@@ -42,8 +49,13 @@
     cursor: pointer;
 }
 
+#airbnb-menu-icon {
+    display: none;
+
+}
 
 
+/* ---------------------------------- Home Section ----------------------------- */
 .airbnb-home {
     height: calc(100vh - 8rem);
     width: 100%;
@@ -106,12 +118,12 @@
 .airbnb-home .left .airbnb-card .form-row .form-row-col2>h2 {
     text-align: left;
     height: 2rem;
-    margin:.2rem 1rem 0 1rem;
-    color:rgb(41, 41, 41);
-    font-size:1.3rem;
+    margin: .2rem 1rem 0 1rem;
+    color: rgb(41, 41, 41);
+    font-size: 1.3rem;
 }
 
-.airbnb-home .left .airbnb-card .form-row .form-row-col1> input {
+.airbnb-home .left .airbnb-card .form-row .form-row-col1>input {
     width: 96%;
     height: 2rem;
     outline: none;
@@ -123,42 +135,50 @@
 .airbnb-home .left .airbnb-card .form-row .form-row-col2 {
     width: calc(50% - 1.5rem);
 }
+
 .airbnb-home .left .airbnb-card .form-row .form-row-col2 input {
-    width:90%;
-    height:3rem;
+    width: 90%;
+    height: 2rem;
     outline: none;
     border: none;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     padding: 0 0 0 1rem;
 }
-.hr{
-    height:3.8rem;
-    width:.3rem;
-    background:rgb(40, 35, 35);
-    border-radius:5rem;
+
+.hr {
+    height: 3.8rem;
+    width: .3rem;
+    background: rgb(40, 35, 35);
+    border-radius: 5rem;
 }
 
-.airbnb-home .left .airbnb-card .form-row .form-row-col2 select{
-width:100%;
-height:2.5rem;
-outline: none;
-font-weight:bold;
-font-size:1.6rem;
-border:0;
-}
-.airbnb-home .left .airbnb-card .form-row .form-row-col2 select option{
+.airbnb-home .left .airbnb-card .form-row .form-row-col2 select {
+    width: 100%;
+    height: 2.5rem;
+    outline: none;
+    font-weight: bold;
+    font-size: 1.6rem;
+    border: 0;
     text-align: center;
-    font-weight:bold;
-    font-size:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.submit-btn{
-    width:100%;
-    height:4.5rem;
-    border-radius:1.2rem;
-    background:rgb(223,21,97);
-    border:none;
-    color:white;
-    font-size:1.6rem;
+
+.airbnb-home .left .airbnb-card .form-row .form-row-col2 select option {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 4.5rem;
+    border-radius: 1.2rem;
+    background: rgb(223, 21, 97);
+    border: none;
+    color: white;
+    font-size: 1.6rem;
     font-weight: bold;
 }
 
@@ -173,4 +193,94 @@ border:0;
     width: 100%;
     height: 100%;
     border-radius: 1rem 1rem;
+}
+
+
+
+@media screen and (max-width:800px) {
+    .airbnb-containter {
+        width: 100%;
+        margin: 0;
+    }
+
+    .airbnb-home .right {
+        right: 1rem;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .airbnb-home {
+        flex-direction: column;
+    }
+
+    .airbnb-home .left {
+        top: 0;
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        zoom: .8;
+        border-radius: 0;
+        z-index: 1;
+        
+    }
+    
+    .airbnb-home .right {
+        position: relative;
+        right: 0;
+        height: 50%;
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .airbnb-home .right img {
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .airbnb-nav-logo img {
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+    .airbnb-nav-logo>h1{
+        font-size: 2rem;;
+    }
+    #airbnb-menu-icon {
+        display: block;
+        font-size: 3rem;
+        margin-right: 2rem;
+    }
+    
+    .airbnb-nav-container >ul {
+        position: absolute;
+        top:7rem;
+        z-index: 2;
+        flex-direction: column;
+        margin:0 1%;
+        padding:0;
+        height:20vh;
+        width:98%;
+
+        background:rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(.5rem);
+        overflow: hidden;
+        transition:all 1s ease-in-out;
+    }
+    .airbnb-nav-container >ul li{
+        margin: 0;
+        font-size: 2rem;
+        color:white;
+    }
+
+    .airbnb-home .left .airbnb-card>h2 {
+        font-size: 2.5rem;
+    }
+    .airbnb-home .left .airbnb-card>p {
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width:250px){
+    .airbnb-containter {
+        zoom:.6;
+    }
 }
