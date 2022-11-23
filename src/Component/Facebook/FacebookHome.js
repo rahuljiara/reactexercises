@@ -22,6 +22,8 @@ const FacebookNav = () => {
                 <li><i className="fa-solid fa-gift"></i></li>
                 <li><i className="fa-solid fa-gamepad"></i></li>
             </ul>
+            <i class="fa-solid fa-bars" id="fb-menu-icon"></i>
+
 
             <ul className="fb-nav-right">
                 <li>
@@ -94,6 +96,7 @@ const FacebookLeft = () => {
         </div>
     </>
 }
+
 const FacebookMiddle = () => {
     return <>
         <div className="fb-main">
@@ -157,15 +160,13 @@ const FacebookMiddle = () => {
 
             <div className="fb-main-others-post">
                 <div className="fb-main-others-post-header">
-                    <i class="fa-solid fa-user active-user"></i>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2810/2810494.png" />
                     <div className="others-post-title">
                         <div>
-                            <span>Ro-Hit Kumar </span>
-                            is with
-                            <span> Guddu Kumar </span>
-                            and 3 others
+                            <span>Rahul Ji Ara </span> is with <span> Guddu Kumar </span>
+                            and 6 others
                         </div>
-                        <div> November 21, 2022 <i class="fa-solid fa-earth-asia"></i></div>
+                        <div> November 21, 2021 ‧ <i class="fa-solid fa-earth-asia"></i></div>
                     </div>
                     <i class="fa-solid fa-ellipsis"></i>
                 </div>
@@ -173,22 +174,63 @@ const FacebookMiddle = () => {
                 <div className="others-post-image">
                     <img src="https://images.pexels.com/photos/2405039/pexels-photo-2405039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
                 </div>
+
                 <div className="fb-main-others-post-footer">
                     <div className="fb-main-others-post-footer-upper">
-                  <p>  <i class="fa-solid fa-thumbs-up"></i>10k</p>
-                  <p>894 Comments</p>
+                        <p>  <i class="fa-solid fa-thumbs-up"></i>10k</p>
+                        <p>894 Comments</p>
                     </div>
                     <hr id="post-devider" />
                     <div className="fb-main-others-post-footer-bottom">
                         <p><i class="fa-solid fa-thumbs-up" id="post-like"></i>Like</p>
                         <p><i class="fa-regular fa-message" id="post-comment"></i>Comment</p>
+                        <p><i class="fa-solid fa-share"></i>Share</p>
                     </div>
                 </div>
+                <hr id="post-devider" />
+                <div className="comments">
+                    <p>View 10 more comments</p>
+                    <div className="comments-upper">
+                        <i class="fa-solid fa-user active-user"></i>
+                        <p> <span>Guddu Kumar</span> <br />
+                            <span> Nice Pic Bro</span>
+                        </p>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div className="comments-middle">
+                        <div className="comments-middle-reaction"><p> <span>Like </span>
+                            <span>Reply</span>
+                            <span>1y</span>
+                        </p></div>
+                        <div className="comments-middle-reply">
+                            <span> ⤷ </span>
+                            <img src="https://cdn-icons-png.flaticon.com/512/2810/2810494.png" />
+                            <p> Rahul Ji Ara replied ‧ 11 Reply </p>
+                        </div>
+
+                    </div>
+                    <div className="comments-footer-write-comment">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2810/2810494.png" className="online" />
+                        <input type="text" placeholder="Write a comment... "
+                        />
+                        <div className="comments-footer-write-comment-icons">
+                            <img src="https://cdn-icons-png.flaticon.com/512/134/134819.png" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/569/569501.png" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/685/685655.png" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/739/739272.png" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/3342/3342137.png" />
+                        </div>
+                    </div>
+                    <p> Press Enter to post</p>
+
+                </div>
+
             </div>
         </div>
 
     </>
 }
+
 const FacebookRight = () => {
     return <>
         <div className="fb-home-right">

@@ -109,6 +109,10 @@
     border-radius: 0;
 }
 
+#fb-menu-icon {
+    display: none;
+    font-size: 3rem;
+}
 
 /*  -------------------------------right Side ------------------------------------- */
 .fb-nav .fb-nav-right {
@@ -393,7 +397,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: scroll;
+
 }
 
 .fb-main-status {
@@ -674,7 +678,7 @@
 /* ---------------------------------------  Other's post Section ---------------------------------------------------* */
 
 .fb-main-others-post {
-    height: 50rem;
+    height: fit-content;
     width: 75%;
     background: white;
     margin: 2rem 0;
@@ -684,7 +688,7 @@
 
 .fb-main-others-post-header {
     width: calc(100% - 3rem);
-    height: 4rem;
+    height: fit-content;
     margin: 1.5rem;
     display: flex;
     align-items: center;
@@ -701,6 +705,7 @@
     height: 100%;
     font-size: 1.5rem;
     display: flex;
+    margin-left: 1rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -714,12 +719,21 @@
     cursor: pointer;
 }
 
+.fb-main-others-post-header>img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: .1rem solid grey;
+    cursor: pointer;
+}
+
 .others-post-title div {
     height: 50%;
     width: 100%;
     display: flex;
     justify-content: left;
     align-items: center;
+    flex-wrap: wrap;
     color: grey;
 
 }
@@ -765,48 +779,52 @@
 .fb-main-others-post-footer-upper {
     height: 3rem;
     justify-content: space-between;
-    margin:0 2rem;
+    margin: 0 2rem;
 }
-.fb-main-others-post-footer-upper p{
-    font-size:1.5rem;
-    color:grey;
+
+.fb-main-others-post-footer-upper p {
+    font-size: 1.5rem;
+    color: grey;
     cursor: pointer;
 }
-.fb-main-others-post-footer-upper p:hover{
-    text-decoration:underline;
+
+.fb-main-others-post-footer-upper p:hover {
+    text-decoration: underline;
 }
+
 .fb-main-others-post-footer-upper p i {
-    color:white;
-    background:royalblue;
-    border-radius:50%;
-    padding:.5rem;
-    font-size:1.2rem;
+    color: white;
+    background: royalblue;
+    border-radius: 50%;
+    padding: .5rem;
+    font-size: 1.2rem;
 }
 
 
 
 
 .fb-main-others-post-footer-bottom {
-    height: 4rem;
-    width:90%;
-    margin:0 5%;
+    height: 3rem;
+    width: 90%;
+    margin: 0 5%;
     justify-content: space-evenly;
 }
 
 .fb-main-others-post-footer-bottom p {
-    width:45%;
-    font-size: 1.7rem;
+    width: 45%;
+    font-size: 1.5rem;
     font-weight: 500;
     color: rgb(50, 50, 50);
-    padding:1rem ;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius:.8rem;
-    cursor:pointer;
+    border-radius: .6rem;
+    cursor: pointer;
 }
+
 .fb-main-others-post-footer-bottom p:hover {
-    background: rgb(227, 228, 229);
+    height: 3rem;
+    background: rgb(235, 238, 241);
 }
 
 .fb-main-others-post-footer-bottom p i {
@@ -814,10 +832,454 @@
     font-size: 2rem;
 
 }
-#post-like{
-    color:royalblue;
+
+#post-like {
+    color: royalblue;
 }
-#post-comment{
+
+#post-comment {
     font-size: 1.7rem;
-    margin-top:.5rem;
+    margin-top: .5rem;
+}
+
+.comments {
+
+    width: 95%;
+    margin: 0 2.5%;
+}
+
+.comments>p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(62, 62, 62);
+    cursor: pointer;
+}
+
+.comments>p:hover {
+    text-decoration: underline;
+}
+
+.comments-upper {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    margin: 0;
+}
+
+.comments-upper p {
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    background: rgb(235, 238, 241);
+    border-radius: .8rem;
+    padding: .5rem;
+    margin: 0;
+}
+
+.comments-upper p span:first-child {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.comments-upper>i {
+    cursor: pointer;
+}
+
+.comments-upper i:last-child {
+    color: grey;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: .3s;
+    margin-left: 1rem;
+}
+
+.comments-upper:hover.comments-upper i:last-child {
+    opacity: 1;
+    transition: .3s;
+}
+
+.comments-middle {
+    width: 80%;
+    margin: 0 10%;
+}
+
+.comments-middle-reaction p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+}
+
+.comments-middle-reaction p span:first-child {
+    color: royalblue;
+}
+
+.comments-middle-reaction p span:last-child {
+    font-weight: 400;
+    color: black;
+}
+
+.comments-middle-reaction p span {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.comments-middle-reaction p span:hover {
+    text-decoration: underline;
+}
+
+
+.comments-middle-reply {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
+
+.comments-middle-reply span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.comments-middle-reply img {
+    width: 2rem;
+    height: 2rem;
+    border: .1rem solid grey;
+    border-radius: 50%;
+    margin: 0 1rem;
+}
+
+.comments-middle-reply p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(50, 49, 49);
+    cursor: pointer;
+}
+
+.comments-middle-reply p:hover {
+    text-decoration: underline;
+}
+
+.comments-footer-write-comment {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.comments-footer-write-comment input {
+    height: 3.5rem;
+    width: 90%;
+    border-radius: 5rem;
+    outline: none;
+    border: none;
+    background: rgb(222, 231, 233);
+    padding: 0 1rem;
+}
+
+.comments-footer-write-comment-icons {
+    position: absolute;
+    right: 1rem;
+}
+
+.comments-footer-write-comment-icons img {
+    width: 1.6rem;
+    margin: 0 .5rem;
+    cursor: pointer;
+    opacity: .7;
+}
+
+.comments-footer-write-comment>img:first-child {
+    width: 3rem;
+    height: 3rem;
+    border: .1rem solid grey;
+    border-radius: 50%;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.comments>p:last-child {
+    font-size: 1.3rem;
+    margin-left: 4rem;
+    color: black;
+    font-weight: 400;
+}
+
+.comments>p:last-child:hover {
+    text-decoration: none;
+    cursor: text;
+}
+
+
+
+@media screen and (max-width:1250px) {
+
+    .fb-home-left,
+    .fb-home-right {
+        width: 25rem;
+    }
+
+    .fb-main {
+        position: relative;
+        width: calc(100% - 50rem);
+    }
+
+    .fb-main-status {
+        grid-template-columns: repeat(4, auto);
+        justify-content: center;
+    }
+
+    .fb-main-status-card {
+        margin: 0 .5rem;
+    }
+
+    .fb-main-status-card:nth-child(5) {
+        display: none;
+    }
+
+    .fb-main-post,
+    .fb-main-create-room,
+    .fb-main-others-post {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .fb-main {
+        width: calc(100% - 50rem);
+        margin: 0 25rem;
+    }
+
+    .fb-home-right,
+    .fb-home-left {
+        width: 25rem;
+        height: 100vh;
+    }
+
+}
+
+@media screen and (max-width:1050px) {
+    .fb-nav {
+        font-size: 1.8rem;
+    }
+
+    .fb-nav .fb-nav-left .fb-nav-left-searchbox input {
+        width: 15rem;
+    }
+
+    .fb-nav .fb-nav-left .fb-nav-left-searchbox i {
+        display: none;
+    }
+
+
+    .fb-main {
+        width: calc(100% - 25rem);
+        margin: 0 25rem 0 0;
+    }
+
+    .fb-main-status {
+        grid-template-columns: repeat(5, auto);
+        justify-content: center;
+    }
+
+    .fb-main-status-card {
+        margin: 0 .5rem;
+    }
+
+    .fb-main-status-card:nth-child(5) {
+        display: block;
+    }
+
+    .fb-main-post,
+    .fb-main-create-room,
+    .fb-main-others-post {
+        width: 70%;
+    }
+
+    .fb-home-left {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    .fb-nav .fb-nav-left .fb-nav-left-searchbox input {
+        width: 10rem;
+        font-size: 1.1rem;
+    }
+
+    .fb-nav .fb-nav-middle>li {
+        width: 7rem;
+        text-align: center;
+    }
+
+    .fb-nav .fb-nav-middle>li i {
+        font-size: 2rem;
+    }
+
+    #active {
+        width: 7rem;
+    }
+
+    .fb-nav .fb-nav-middle>li:hover i {
+        width: 5rem;
+    }
+
+
+    .fb-home-right {
+        display: none;
+    }
+
+    .fb-main {
+        width: 100%;
+        margin: 0;
+        padding:0;
+    }
+
+    .fb-main-post,
+    .fb-main-create-room,
+    .fb-main-others-post {
+        width: 50rem;
+    }
+
+    .fb-main-status {
+        width: 100%;
+    }
+
+
+
+    .fb-main-status {
+        grid-template-columns: repeat(4, auto);
+        justify-content: center;
+    }
+
+    .fb-main-status-card,#owner-status  {
+        margin: 0 .5rem;
+    }
+
+    .fb-main-status-card:nth-child(5) {
+        display: none;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .fb-nav .fb-nav-middle {
+        display: none;
+    }
+
+    #fb-menu-icon {
+        display: block
+    }
+}
+
+@media screen and (max-width:550px) {
+    .fb-nav .fb-nav-right {
+        width: 35%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        list-style: none;
+    }
+
+    .fb-nav .fb-nav-right li img {
+        width: 2rem;
+        height: 2rem;
+        padding: .5rem;
+        margin-right: 1rem;
+    }
+
+    .fb-nav .fb-nav-right li i {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+
+    .fb-nav .fb-nav-left .fb-nav-left-searchbox input {
+        width: 4rem;
+    }
+
+    .fb-nav .fb-nav-left .fb-nav-left-searchbox input::placeholder {
+        opacity: 0;
+    }
+
+    .fb-nav .fb-nav-left .fb-nav-left-searchbox i {
+        display: block;
+        text-align: center;
+        margin-left: -.6rem;
+        ;
+    }
+
+    .fb-main-post,
+    .fb-main-create-room,
+    .fb-main-others-post {
+        width: 98%;
+    }
+
+    .fb-main-status {
+        height: 13rem;
+    }
+
+    .fb-main-status-card,
+    #owner-status {
+        position: relative;
+        height: 100%;
+        width: 8rem;
+        cursor: pointer;
+        transition: webkit-object-fit 1s ease-in-out;
+    }
+    #owner-status>p, .fb-main-status-card p {
+        font-size: 1.1rem;;
+    }
+    #owner-status p i{
+        font-size:1.3rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        border: .3rem solid white;
+        top: -2rem;
+    }
+    .fb-main-status-card i {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.7rem;
+        border: .3rem solid white;
+
+    }
+
+    .fb-main-post-lower p {
+        font-size: 1rem;
+    }
+
+    .fb-main-post-lower p i {
+        font-size: 1.8rem;
+    }
+
+    .others-post-title div span {
+        width: fit-content;
+    }
+
+    .others-post-title div{
+        font-size:1.4rem;
+        line-height:1.2rem;
+    }
+}
+
+@media screen and (max-width:355px){
+    .fb-main-status {
+        grid-template-columns: repeat(3, auto);
+    }
+    .fb-main-status-card:last-child,  .fb-main-status-card:nth-last-child(2){
+        display:none;
+    }
+    .fb-main-post-lower p {
+       font-size:0;
+    }
+}
+@media screen and (max-width:265px){
+body{
+zoom:.5;
+
+}
 }
