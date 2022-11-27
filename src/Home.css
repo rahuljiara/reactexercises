@@ -89,7 +89,7 @@
 }
 
 .container .project-container .project-card .project-title>h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 
 }
 
@@ -200,4 +200,9 @@
     .container .head>p{
         font-size:1rem;
     }
+}
+
+
+@media screen and (max-weight:800px){
+
 }

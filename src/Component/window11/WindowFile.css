@@ -1,0 +1,481 @@
+.windows-files-container {
+    height: calc(100vh - 7vh);
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 7vh;
+    z-index: -1;
+}
+
+.windows-files-header1 {
+    height: 6rem;
+    width: 100%;
+    background: rgba(163, 193, 229, 0.2);
+    overflow: hidden;
+}
+
+.windows-files-header1 i,
+.windows-files-header1 span {
+
+    font-size: 1.6rem;
+}
+
+.windows-files-header1>p {
+    height: 1rem;
+    width: 7rem;
+    margin: .8rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+.windows-files-header1>p img {
+    width: 2rem;
+    margin: .5rem;
+}
+
+.header1-col {
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    width: 65rem;
+    height: 3rem;
+}
+
+.windows-files-header1-col1 {
+    width: 12rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: .2rem solid grey;
+    color: grey;
+}
+
+.windows-files-header1-col1>p {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+
+#plus-icon {
+    font-size: 1.2rem;
+    border: .2rem solid grey;
+    border-radius: 50%;
+    padding: .2rem;
+    color: royalblue;
+}
+
+.windows-files-header1-col2 {
+    width: 28rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-right: .2rem solid grey;
+    ;
+}
+
+.windows-files-header1-col2>i {
+    font-size: 1.6rem;
+    color: grey;
+}
+
+.windows-files-header1-col3 {
+    width: 7rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+    cursor: default;
+}
+
+#up-down-arrow {
+    color: royalblue;
+}
+
+.windows-files-header1-col3:hover,
+.windows-files-header1-col4:hover {
+    background: white;
+}
+
+.windows-files-header1-col4 {
+    width: 9rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-right: .2rem solid rgb(95, 95, 95);
+    margin-right: 1rem;
+    cursor: default;
+}
+
+
+/* --------------------------------------- header 2 ----------------------------------------- */
+.windows-files-header2 i {
+    color: rgb(135, 135, 135);
+}
+
+.windows-files-header2 {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.windows-files-header2-left {
+    width: 12%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    color: gray;
+
+}
+
+.windows-files-header2-middle {
+    width: 69%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: .1rem solid black;
+
+}
+
+.windows-files-header2-middle input {
+    width: 86%;
+    height: 80%;
+    border: none;
+    outline: none;
+
+}
+
+.windows-files-header2-middle i {
+    font-size: 1.6rem;
+}
+
+#star-icon {
+    font-size: 1.6rem;
+    color: gold;
+}
+
+.windows-files-header2-middle i:nth-child(2) {
+    font-size: 1rem;
+}
+
+.windows-files-header2-right {
+    width: 17%;
+    height: 100%;
+    margin: 0 .5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: .1rem solid black;
+
+}
+
+.windows-files-header2-right input {
+    border: none;
+    outline: none;
+}
+
+
+/* --------------------------------------- All Folder Section ------------------------------------ */
+
+/* --------------------Left section ----------------------------- */
+.windows-folder {
+    display: flex;
+    overflow: hidden;
+}
+
+.windows-folder-left {
+    width: 16%;
+    height: calc(100vh - 16rem);
+    margin-right: 1%;
+}
+
+.windows-folder-left p {
+    cursor: default;
+    font-size: 1.4rem;
+    margin-left: .5rem;
+}
+
+.windows-folder-left p i {
+    margin-right: .5rem;
+    font-size: 1.2rem;
+}
+
+.windows-folder-left-top3 img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.windows-folder-left-top3 ul {
+    list-style-type: none;
+    padding-left: 2rem;
+    width: 16rem;
+
+    overflow: hidden;
+}
+
+.windows-folder-left-top3 ul li {
+    font-size: 1.4rem;
+    padding-left: .2rem;
+    margin: .2rem 0;
+    cursor: default;
+}
+
+.windows-folder-left-top3 ul li i {
+    font-size: 1.2rem;
+}
+
+/* ----------------right section ---------------------------- */
+.windows-folder-right {
+    width: 83%;
+    height: calc(100vh - 16rem);
+}
+
+.folder-hr {
+    height: 2rem;
+    align-items: center;
+}
+
+
+
+.windows-folder-right-top-list {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-evenly;
+}
+
+.windows-folder-right-top-list .windows-folder-card {
+    width: 25rem;
+    height: 5rem;
+    border-radius: .2rem;
+    font-size: 1.5rem;
+    display: flex;
+
+    align-items: center;
+    margin: .5rem 0;
+    cursor: default;
+}
+
+.windows-folder-card:hover,
+.windows-folder-left-top3 ul li:hover {
+    background: rgba(40, 156, 214, 0.1);
+}
+
+.windows-folder-card>img {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: 0 1rem;
+}
+
+.windows-folder-right-bottom-card {
+    display: flex;
+    align-items: center;
+    position: relative;
+    float: left;
+    width: 25rem;
+    height: 5rem;
+    margin: 2rem 1.5rem;
+    cursor: default;
+}
+
+.windows-folder-right-bottom-card:hover {
+    background: rgba(40, 156, 214, 0.1);
+}
+
+.windows-folder-right-bottom-card p {
+    margin: .1rem 0;
+}
+
+.windows-folder-right-bottom-card p:nth-child(1) {
+    font-size: 1.4rem
+}
+
+.progress-bar {
+    width: 19rem;
+    height: 1.4rem;
+    background-color: rgb(228, 228, 228);
+    box-shadow: 0 0 .1rem rgb(0, 0, 0);
+}
+
+.progress-bar-filler {
+    width: 13.68rem;
+    height: 100%;
+    background: rgb(40, 155, 214);
+}
+
+
+
+
+@media screen and (max-width:1200px) {
+    .windows-folder-right-top-list {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .windows-files-header2-middle {
+        width: 60%;
+    }
+
+    .windows-files-header2-right {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .windows-folder-left {
+        width: 25%;
+    }
+
+    .windows-folder-right {
+        width: 75%;
+    }
+
+    .windows-folder-right-top-list {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .windows-folder-card {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .windows-files-container {
+        left: 0;
+    }
+
+    .windows-files-header2 {
+        width: 98%;
+        margin: 0 1%;
+        justify-content: center;
+    }
+
+    .windows-files-header2-middle input {
+        width: 80%;
+
+    }
+
+    .windows-files-header2-left {
+        width: 15%;
+    }
+
+    .windows-files-header2-middle {
+        width: 50%;
+    }
+
+    .windows-files-header2-right {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .windows-files-container {
+        background: rgb(0, 36, 43);
+        color: white;
+    }
+
+    .windows-files-header1,
+    .windows-files-header2,
+    .windows-folder-left {
+        display: none;
+
+    }
+
+    .folder-hr {
+        margin-left: 1rem;
+    }
+
+    .windows-folder-right {
+        width: 100%;
+        height: calc(100vh - 7rem);
+    }
+
+    .windows-folder-right-top-list {
+        width: 100%;
+        justify-content: space-evenly;
+        margin: .5rem 0;
+        overflow: hidden;
+    }
+
+    .windows-folder-right-top-list .windows-folder-card {
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width:350px) {
+
+    .windows-folder-right-top-list,
+    .windows-folder-right-bottom-list {
+        grid-template-columns: repeat(1, auto);
+        justify-content: left;
+    }
+
+    .windows-folder-right-top-list .windows-folder-card,
+    .windows-folder-right-bottom-card {
+        width: 20rem;
+    }
+
+    .progress-bar {
+        width: 14.5rem;
+        height: 1.4rem;
+        background-color: rgb(228, 228, 228);
+        box-shadow: 0 0 .1rem rgb(0, 0, 0);
+    }
+
+    .progress-bar-filler {
+        width: 10rem;
+        height: 100%;
+        background: rgb(40, 155, 214);
+    }
+}
+
+@media screen and (max-width:220px) {
+
+    .windows-folder-right-top-list,
+    .windows-folder-right-bottom-list {
+        grid-template-columns: repeat(1, auto);
+        justify-content: left;
+    }
+
+    .windows-folder-right-top-list .windows-folder-card,
+    .windows-folder-right-bottom-card {
+        zoom: .7;
+    }
+
+}
+
+@media screen and (max-width:150px) {
+
+    .windows-folder-right-top-list .windows-folder-card,
+    .windows-folder-right-bottom-card {
+        zoom: .4;
+    }
+
+}
+@media screen and (max-height:500px) {
+
+    .windows-folder-right, .windows-folder-left  {
+     overflow-y:scroll;
+     height: calc(100vh - 10vh);
+
+    }
+    .windows-files-header1,
+    .windows-files-header2   {
+        display: none;
+
+    }
+}
+@media screen and (max-height:300px) {
+ 
+
+}

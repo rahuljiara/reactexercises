@@ -1,0 +1,318 @@
+* {
+    --pc-icon: "https://cdn-icons-png.flaticon.com/512/1865/1865273.png"
+        --folder-img: "https://cdn-icons-png.flaticon.com/512/3767/3767094.png"
+        --download-folder-img: "https://cdn-icons-png.flaticon.com/512/3121/3121602.png"
+        --notepad-img: "https://cdn-icons-png.flaticon.com/512/686/686234.png"
+        --windows-icon: "<i class=" fa-brands fa-windows"></i>"
+}
+
+.windows-container {
+    --windows-taskbar-color: rgb(233, 239, 250);
+    --windows-taskbar-hover-color: white;
+    --windows-taskbar-tools-color: rgba(0, 0, 0, 0.89);
+
+    height: 100vh;
+    width: 100%;
+    background: url(/public/img/Windows-11-wallpapers-1.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.windows-desktop {
+    height: 93vh;
+    width: 100%;
+}
+
+.software {
+    width:fit-content;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    margin-left: 1rem;
+}
+.software img:nth-child(4) {
+    transform: scale(.85);
+    object-fit: cover;
+}
+
+.software>img:nth-child(7) {
+    transform: scale(1.3);
+}
+
+.software>img:nth-child(8) {
+    margin-left: 2rem;
+    transform: scale(1.3);
+}
+.software img,.software i{
+    width: 4rem;
+    height: 4rem;
+
+    margin: 1rem;
+}
+
+.software img[src="/img/vlc-icon.png"],
+.software img[src="/img/vs-studio-icon.png"] {
+    border-radius: 50%;
+}
+
+/* ---------------------------------- Task Bar ------------------------------------------------- */
+
+
+/*----------------------- Application of taskbar ----------------- */
+.windows-taskbar {
+    position: relative;
+    height: 7vh;
+    width: 100%;
+    background: var(--windows-taskbar-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+
+}
+
+.windows-taskbar img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 .7rem;
+    cursor: pointer;
+}
+
+#store-icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+#folder-icon,
+#notepad-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+
+
+/*----------------------- tools of taskbar ----------------- */
+.windows-taskbar-tools {
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.windows-taskbar-tools i {
+    font-size: 2rem;
+    margin: 0 .2rem;
+    color: var(--windows-taskbar-tools-color);
+}
+
+#arrow-icon {
+    padding: 1.1rem .3rem;
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+}
+
+#keyboard-icon {
+    padding: 1.1rem .3rem;
+    font-size: 1.5rem;
+    margin: 0 .3rem;
+    text-align: center;
+}
+
+.windows-taskbar-tools-lang,
+.windows-taskbar-tools-calander {
+    height: 94%;
+    width: fit-content;
+    font-weight: 500;
+    margin: 0 .5rem;
+    text-align: center;
+    padding: .3rem .4rem;
+}
+
+.windows-taskbar-tools-lang p {
+    margin: 0;
+    font-size: 1.3rem;
+    color: var(--windows-taskbar-tools-color);
+}
+
+.windows-taskbar-tools-network {
+
+    height: 90%;
+    width: fit-content;
+    padding: 1rem .5rem;
+    margin: 0 .2rem;
+    text-align: center;
+}
+
+.windows-taskbar-tools-network i {
+    font-size: 1.6rem;
+    margin: 0 .5rem;
+}
+
+.windows-taskbar-tools-calander p {
+    font-size: 1.2rem;
+    margin: .1rem 0;
+    text-align: right;
+    color: var(--windows-taskbar-tools-color);
+
+}
+
+#arrow-icon:hover,
+#keyboard-icon:hover,
+.windows-taskbar-tools-lang:hover,
+.windows-taskbar-tools-network:hover,
+.windows-taskbar-tools-calander:hover {
+    background: var(--windows-taskbar-hover-color);
+    border-radius: .8rem;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:800px) {
+    .windows-taskbar {
+        justify-content: left;
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .windows-taskbar {
+        justify-content: left;
+        padding-left: 1rem;
+    }
+
+    .windows-taskbar-tools-lang,
+    .windows-taskbar-tools-network {
+        display: none;
+    }
+
+    .windows-taskbar-tools-calander {
+        position: absolute;
+        top: -85vh;
+        right: 0rem;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+    }
+
+    .windows-taskbar-tools-calander p {
+        font-size: 3rem;
+        font-weight: 800;
+    }
+
+    .software {
+        margin: 0;
+        position: absolute;
+        bottom: 8rem;
+        width: 100vw;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        justify-content: space-around;
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width:300px) {
+
+    #arrow-icon,
+    #keyboard-icon,
+    #notepad-icon,
+    .windows-taskbar img:nth-child(3),
+    .windows-taskbar img:nth-child(4),
+    .windows-taskbar img:nth-child(5) {
+        display: none;
+    }
+
+    .software {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .windows-taskbar-tools-calander p {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:150px) {
+    .windows-taskbar img:nth-child(2) {
+        display: none;
+    }
+
+    .software {
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .windows-taskbar-tools-calander p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .windows-taskbar-tools-calander {
+        position: absolute;
+        top: -90vh;
+    }
+}
+
+@media screen and (max-height:600px) {
+    .software {
+        grid-template-columns: repeat(2,auto);
+    }
+    .software>img:nth-child(8) {
+        margin-top:1.8rem;
+        transform: scale(1.3);
+    }
+    .windows-taskbar {
+        height: 10vh;
+    }
+    .windows-desktop {
+        height: 90vh;
+    }
+    .windows-taskbar i, .windows-taskbar p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-height:350px) {
+    .software {
+        grid-template-columns: repeat(3,auto);
+    }
+    .windows-taskbar {
+        height: 12vh;
+    }
+    .windows-desktop {
+        height: 88vh;
+    }
+}
+@media screen and (max-height:250px) {
+    .software {
+        grid-template-columns: repeat(3,auto);
+    }
+    .windows-taskbar {
+        height: 15vh;
+    }
+    .windows-desktop {
+        height: 85vh;
+    }
+}
+@media screen and (max-height:200px) {
+    .software {
+        grid-template-columns: repeat(10,auto);
+    }
+    .windows-taskbar {
+        height: 20vh;
+    }
+    .windows-desktop  {
+        height: 80vh;
+    }
+
+}

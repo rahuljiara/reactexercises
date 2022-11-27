@@ -8,7 +8,7 @@ const ProjectList = [
     {
         id: "1",
         name: "React Info",
-        logo: "../../img/logo192.png",
+        logo: "../img/logo192.png",
         link: "/project/react-info"
     },
     {
@@ -25,21 +25,21 @@ const ProjectList = [
     },
     {
         id: "4",
-        name: "React Info",
-        logo: "../../img/logo192.png",
-        link: "/project/react-info"
+        name: "Windows 11",
+        logo: "../img/windows-11-icon.png",
+        link: "/project/windows-11"
     },
     {
         id: "5",
-        name: "React Info",
-        logo: "../../img/logo192.png",
-        link: "/project/react-info"
+        name: "Window Start",
+        logo: "../img/windows-11-icon.png",
+        link: "/project/windows-11/start"
     },
     {
         id: "6",
-        name: "React Info",
-        logo: "../../img/logo192.png",
-        link: "/project/react-info"
+        name: "Window Folder",
+        logo: "https://cdn-icons-png.flaticon.com/512/3767/3767094.png",
+        link: "/project/windows/files"
     },
     {
         id: "7",

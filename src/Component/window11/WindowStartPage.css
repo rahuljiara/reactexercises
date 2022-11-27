@@ -1,0 +1,323 @@
+.window-Start-Page-container-card {
+    --window-grey-color: grey;
+    --windows-taskbar-color: rgb(233, 239, 250);
+
+    position: absolute;
+    bottom: 10vh;
+    height: 57rem;
+    margin: 0 26%;
+    padding: 0;
+    width: 48%;
+    background: rgba(235, 224, 224, 0.866);
+    border-radius: .8rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.466);
+    backdrop-filter: blur(.3rem);
+    z-index: 11;
+}
+
+.window-Start-Page-search {
+    position: relative;
+    height: 3.5rem;
+    width: calc(90% - 4rem);
+    margin: 2rem 5%;
+}
+
+.window-Start-Page-search input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-bottom: .2rem solid royalblue;
+    border-radius: .3rem;
+    padding: .3rem 1rem .3rem 4rem;
+    outline: none;
+}
+
+.window-Start-Page-search i {
+    position: absolute;
+    top: 1.2rem;
+    left: 1rem;
+    font-size: 1.7rem;
+    color: var(--window-grey-color);
+
+}
+
+
+.window-Start-Page-row1 {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 7.5%;
+}
+
+.window-Start-Page-row1 h3 {
+    font-size: 1.4rem;
+    cursor: default;
+}
+
+.window-Start-Page-row1 p {
+    font-weight: 500;
+    font-size: 1.2rem;
+    height: 2.3rem;
+    width: 7rem;
+    text-align: center;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: white;
+    box-shadow: 0 0 1rem rgba(128, 128, 128, 0.393);
+    cursor: default;
+}
+
+.window-Start-Page-row1 p:hover {
+    background-color: rgba(255, 255, 255, 0.769);
+}
+
+.window-Start-Page-apps {
+    width: 90%;
+    margin: 0 5%;
+    height: 29rem;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.window-Start-Page-apps-card {
+    height: 6rem;
+    width: 6rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.window-Start-Page-apps-card img {
+    height: 4.2rem;
+    width: 4.2rem;
+    margin: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: default;
+}
+
+.window-Start-Page-apps-card:hover {
+    background: rgba(255, 255, 255, 0.749);
+    border-radius: .4rem;
+}
+
+.window-Start-Page-apps p {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 500;
+    cursor: default;
+}
+
+.window-Start-Page-container-card>h3 {
+    font-size: 1.4rem;
+    margin-left: 7.5%;
+    cursor: default;
+
+}
+
+.window-Start-Page-container-card>p {
+    font-size: 1.2rem;
+    margin-left: 7.5%;
+    cursor: default;
+    color: var(--window-grey-color);
+}
+
+.window-Start-Page-container-card>p span {
+    text-decoration: underline;
+    color: blue;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.window-Start-Page-container-card>hr {
+    margin-top: 3rem;
+}
+
+.window-Start-Page-row2 {
+    position: absolute;
+    bottom: .5rem;
+    height: 5rem;
+    width: 85%;
+    margin: 0 7.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.window-Start-Page-row2-account {
+    width: 12rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.window-Start-Page-row2-account i {
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background: rgba(0, 187, 255, 0.068);
+    border: .1rem solid grey;
+    color: var(--window-grey-color);
+    padding: .7rem;
+}
+
+.window-Start-Page-row2-account p {
+    font-size: 1.3rem;
+
+}
+
+.window-Start-Page-row2-account:hover,
+.window-Start-Page-row2-power:hover {
+    background: white;
+    border-radius: .6rem;
+    cursor: default;
+}
+
+.window-Start-Page-row2-power {
+    height: 100%;
+    width: 4rem;
+    border-radius: .6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.window-Start-Page-row2-power i {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.767);
+}
+
+@media screen and (max-width:1000px) {
+    .window-Start-Page-container-card {
+        width: 60rem;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .window-Start-Page-search {
+        display: flex;
+        width: 98%;
+        margin: 2rem 1%;
+    }
+
+    .window-Start-Page-container-card {
+        height: calc(100vh - 7rem);
+        width: calc(100% - 3rem);
+        margin: 0 1rem 0 0;
+        left: 1rem;
+    }
+
+    .window-Start-Page-apps {
+        width: 90%;
+        margin: 0 5%;
+        height: 37rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .window-Start-Page-apps {
+        grid-template-columns: repeat(4, auto);
+        height: 35rem;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .window-Start-Page-apps {
+        grid-template-columns: repeat(3, auto);
+        height: 35rem;
+    }
+
+    .window-Start-Page-apps-card {
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+
+    .window-Start-Page-apps-card img {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+}
+
+@media screen and (max-width:200px) {
+    .window-Start-Page-apps {
+        grid-template-columns: repeat(2, auto);
+        height: 49rem;
+        overflow-x: scroll;
+    }
+
+    .window-Start-Page-apps-card {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .window-Start-Page-apps-card img {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .window-Start-Page-container-card>hr {
+        margin-top: 1rem;
+    }
+
+    .window-Start-Page-apps p,
+    .window-Start-Page-container-card>p,
+    .window-Start-Page-container-card>h3,
+    .window-Start-Page-row1 p,
+    .window-Start-Page-row1 h3,
+    .window-Start-Page-row2-account p {
+        display: none;
+    }
+
+    .window-Start-Page-row2-account,
+    .window-Start-Page-row2-power {
+        width: 50%;
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width:100px) {
+    .window-Start-Page-apps {
+        grid-template-columns: repeat(1, auto);
+        height: 85%;
+    }
+
+    .window-Start-Page-row2 {
+        flex-direction: column;
+    }
+
+    .window-Start-Page-row2-power {
+        margin-top: 1rem;
+    }
+
+    .window-Start-Page-search {
+        display: none;
+    }
+}
+
+@media screen and (max-height:650px) {
+    .window-Start-Page-container-card {
+       height:88vh;
+    }
+    .window-Start-Page-apps {
+        height:60vh;
+        overflow-y:scroll;
+    }
+    .window-Start-Page-apps p,
+    .window-Start-Page-container-card>p,
+    .window-Start-Page-container-card>h3,
+    .window-Start-Page-row1 p,
+    .window-Start-Page-row1 h3 {
+        display: none;
+    }
+}
